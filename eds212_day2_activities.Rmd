@@ -12,3 +12,17 @@ library(palmerpenguins)
 
 ```
 
+```{r}
+ex_1 <- expression(x ^ 2)
+my_derivative <- deriv(ex_1, "x")
+x <- 3
+eval(my_derivative)
+```
+
+```{r}
+ex_2 <- expression(2 * ((3 * a + 2) ^ 4) - 5)
+my_deriv_2 <- deriv(ex_2, "a")
+a <- 1.2
+eval(my_deriv_2)
+```
+
